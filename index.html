@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fichis Store</title>
+    <link href="https://fonts.cdnfonts.com/css/8bit-wonder" rel="stylesheet">                
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/IMAGENES/logo2.png" alt="Logo of the store">
+        </div>
+        <h1 class="title-page">FICHISTORE</h1>
+        <nav class="logo-nav">
+            <ul class="logo-items">
+                <li ><img src="/IMAGENES/Carrito.png" alt="YouTube">BUY</></li>
+                <li><img src="/IMAGENES/GAMES.png" alt="YouTube">GAMES</a></li>
+                <li><img src="/IMAGENES/CONTACTOS.png" alt="YouTube">CONTAC</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!----GAME #1------>
+        <section class="Game">
+            <img src="/IMAGENES/star wars.jpg" alt="Game 1">
+            <h2>STAR WARS</h2>
+            <p>Price: COL$200.000</p>
+            <p>launch: 2020</p>
+            <p>size: 8 GB</p>
+            <button class="buy" data-juego="STAR WARS" data-price="200.000">ADD TO CAR</button>
+            
+        </section>
+        <!----GAME #2------>
+        <section class="Game">
+            <img src="/IMAGENES/Mario kart.jpg" alt="Game 2">
+            <h2>MARIO KART</h2>
+            <p>Price: COL$240.000</p>
+            <p>Launch: 2014</p>
+            <p>size: 15 GB</p>            
+            <button class="buy" data-juego="MARIO KART" data-price="240.000">ADD TO CAR</button>
+        </section>
+        <!----GAME #3------>
+        <section class="Game">
+            <img src="/IMAGENES/ZELDA.jpg" alt="Game 3">
+            <h2>ZELDA BREATH</h2>
+            <p>Price: COL$350.000</p>
+            <p>Launch: 2017</p>
+            <p>size: 16 GB</p>
+            <button class="buy" data-juego="ZELDA" data-price="350.000" >ADD TO CAR</button>
+        </section>
+        <!----GAME #4------>
+        <section class="Game">
+            <img src="/IMAGENES/RESIDEN.jpg" alt="Game 4">
+            <h2>RESIDENT  2</h2>
+            <p>Price: COL$150.000</p>
+            <p>Launch: 2019</p>
+            <p>size: 24 GB</p>
+            <button class="buy" data-juego="RESIDENT EVIL 2" data-price="150.000" >ADD TO CAR</button>
+        </section>
+        <!----GAME #5------>
+        <section class="Game">
+            <img src="/IMAGENES/POKEMON.jpg" alt="Game 5">
+            <h2>POKEMON VIOLET</h2>
+            <p>Price: COL$280.000</p>
+            <p>launch: 2022</p>
+            <p>size: 8 GB</p>
+            <button class="buy" data-juego="POKEMON" data-price="280.000" >ADD TO CAR</button>
+        </section>
+        <!----GAME #6------>
+        <section class="Game">
+            <img src="/IMAGENES/BATMAN.jpg" alt="Game 6">
+            <h2>BATMAN ARKHAM</h2>
+            <p>Price: COL$290.000</p>
+            <p>Launch: 2011</p>
+            <p>size: 14 GB</p>
+            <button class="buy" data-juego="BATMAN" data-price="290.000" >ADD TO CAR</button>
+        </section>        
+    </main>
+        <!----container cart------>
+	<section class="buy-cart">
+        <ul class="buy-carts" id="cart"></ul>
+	</section>
+
+    <template class="template" id="template">       
+        <img class="template-img" src="/IMAGENES/COMPRAS.png" alt="Logo of the store">
+        <li class="template_list_total">
+            <span class="template_quantity">0</span>
+            <span class="template_list">LIST ITEMS</span>
+        </li>
+        <ul id="carts">
+        </ul>
+        <p>Total: $<span class="total"  id="total">0</span></p>
+        <div>
+            <button class="button-Add">ADD</button>
+            <button class="button_Delete">DELETE</button>
+        </div>
+    </template>	
+		<div  id="template_total" class="template_total">		
+		<template id="template_total_purchase">
+			<div class="template_div_total">
+				<div class="template_total_div">					
+                    <p>Total: $<span class="template_total_suma">0</span></p>
+					<button class="button_Delete_purchase">BUY</button>
+				</div>
+			</div>
+		</template>
+    </div>
+    
+    <footer class="footer">
+        <div class="social networks">
+            <a href="#"><img src="/IMAGENES/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="/IMAGENES/whatsapp.png" alt="WhatsApp"></a>
+            <a href="#"><img src="/IMAGENES/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="/IMAGENES/instagram.png" alt="TikTok"></a>
+        </div>
+        <div class="customer_service">
+            <h2>customer service:</h2>
+            <p>Telefono: +57 3003481377</p>
+            <p>Email: www.fichistore.com</p>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
